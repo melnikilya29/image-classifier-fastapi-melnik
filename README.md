@@ -43,6 +43,8 @@ python initdb.py
 ```
 ### Шаг 5: Подготовьте модель CIFAR-10
 Если обученная модель cifar10_model.h5 отсутствует в директории models/, вы можете создать её заново. Это потребует времени и вычислительных ресурсов. Для этого используйте следующий скрипт:
+
+```bash
 import numpy as np
 import tensorflow as tf
 
@@ -80,6 +82,7 @@ model.fit(x_train, y_train, epochs=5, validation_data=(x_test, y_test), batch_si
 # Сохранение модели
 model.save('models/cifar10_model.h5')
 print("✅ Модель сохранена как 'models/cifar10_model.h5'")
+```
 
 ### Шаг 6: Поместите модель в папку models/:
 - Убедитесь, что файл модели cifar10_model.h5 находится в директории models/.
