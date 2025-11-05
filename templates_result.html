@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Результат{% endblock %}
+{% block content %}
+<h2>Результат классификации</h2>
+<img src="{{ image_url }}" alt="Загруженное изображение">
+<p><strong>Файл:</strong> {{ filename }}</p>
+<p><strong>Предсказанный класс:</strong> {{ prediction }}</p>
+<p><strong>Уверенность:</strong> {{ confidence }}</p>
+<br>
+<a href="/">← Загрузить другое изображение</a>
+{% endblock %}

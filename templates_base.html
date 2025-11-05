@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}CIFAR-10 Classifier{% endblock %}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
+        nav { margin-bottom: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+        .container { background: white; padding: 20px; border-radius: 8px; max-width: 800px; }
+        img { max-width: 300px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>🖼️ CIFAR-10 Image Classifier</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/history">История</a>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
